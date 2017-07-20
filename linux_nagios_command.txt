@@ -1,0 +1,7 @@
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+
+yum update -y ; yum install -y nagios nagios-plugins-all
+
+#set the password for the nagiosadmin web user
+htpasswd -c /etc/nagios/passwd nagiosadmin
