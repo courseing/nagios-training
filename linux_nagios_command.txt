@@ -21,6 +21,12 @@ sudo chkconfig nagios on
 nano /etc/sysconfig/selinux
 SELINUX=disable
 
+# Change below file
+nano /etc/httpd/conf.d/nagios.conf
+# uncomment below lines
+Allow from 127.0.0.1
+
+
 # visit
 cd /usr/lib64/nagios/plugins
 
