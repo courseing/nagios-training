@@ -22,7 +22,7 @@ nano /etc/sysconfig/selinux
 SELINUX=disable
 
 # visit
-cd /var/lib64/nagios/plugins
+cd /usr/lib64/nagios/plugins
 
 ./check_swap -a -w 50%
 ./check_swap -a -w 50% -c 70%
